@@ -6,20 +6,28 @@ function mouseIN(){
 function mouseOut(){
     mouseover =false;
 }
+
 window.onload=function(){
     
     counter();
     
-setInterval(function(){
-  
-    var str = window.location.href;
-    var adr = "./images/"
-    if (str.includes("german") || (str.includes("farsi")) || (str.includes("arabi"))){adr = "../images/"}
-    if(!mouseover){i++};
-    if ( i == 25){i = 1;}
-   document.getElementById("slideImage").src=adr+i+".jpg";} ,3000);
+setInterval(showSlide,2000);
 
 }
+function resetI(){
+     i = 1;
+     showSlide();
+    
+ }
+function showSlide()
+    {
+        var tester = new Image();
+        var str = window.location.href;
+        var adr = "./images/"
+        if (str.includes("german") || (str.includes("farsi")) || (str.includes("arabi"))){adr = "../images/"}
+        if(!mouseover){i++};
+       document.getElementById("slideImage").src=adr+i+".jpg"; }
+
 
 function plusDivs(j){
     var str = window.location.href;
