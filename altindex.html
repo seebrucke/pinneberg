@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+</head>
+
+<body onload="counter()">
+
+    <ul class="title">
+        <li class="activeLink"> <a href="index.html">Home</a></li>
+        <li class="link"> <a href="contact.html">contact</a></li>
+        <li class="link"> <a href="about.html">about</a></li>
+        <li class="link"> <a href="./german/german.html">DE</a></li>
+        <li class="link"> <a href="./arabi/arabi.html">Arabisch</a></li>
+        <li class="link"> <a href="./farsi/farsi.html">Persisch</a></li>
+    </ul>
+
+    <table width="100%" align="left" style="padding-top: 50px;">
+            <tr style="height: 10px;vertical-align:middle;">
+    
+                <td class="title" style="padding-left: 40px; text-align: left;" colspan="3">
+                    <img src="./images/logo.jpg" style="  height: 70px;vertical-align: middle;margin:3px;" />
+                    <h2 style=" display: inline; font-family:Arial; "> Seebrücke Kreis Pinneberg</h2>
+                </td>
+    
+            </tr>
+
+        </tr>
+
+        <tr style="height: 485px;">
+            <td style="text-align: left; font-size: 16px; font-family:verdana; width:33%">
+                <h1>What is the alliance "Seebrücke?</h1>
+                The alliance "Seebrücke" - an association of several refugees - called for demonstrations
+                in German cities in July 2018. Demonstrators wore some orange lifejackets and lifebuoys to
+                raise awareness of the rescue operation and to demonstrate for the Sea Rescue, as well as safe
+                escape routes and a humane refugee policy. The cause of the demonstrations were the events
+                surrounding the rescue "Lifeline". The rescue ship received in june with over 200 rescued
+                people on board no landing permit in the Mediterranean. Among other things, Malta refused
+                the rescue ships "Lifeline" and "Sea-Watch 3" the exit from the port. In addition, the captain
+                is threatened with a procedure.
+
+                <a class="normal" href="https://www.bedeutungonline.de/buendnis-seebruecke-initiative-seebruecke/">read
+                    more</a>
+                <br />
+                <br />
+                <h2>
+                    You can find us on <a class="normal" href="https://www.facebook.com/seebrueckepinneberg/">facebook</a>
+                    too.
+                </h2>
+                <br />
+                <br />
+                <h2>
+                    Please sign our petition <a class="normal" href="https://weact.campact.de/petitions/kreis-pinneberger-appell-fur-seenotrettung-und-sichere-hafen">here</a>.</h2>
+            </td>
+            <td style="width: 33%; vertical-align:middle;">
+                <img src="./images/1.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/2.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/3.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/4.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/5.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/6.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/7.jpg" alt="image comes here" class="caros">
+
+
+                <img src="./images/9.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/10.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/11.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/12.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/13.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/14.jpg" alt="image comes here" class="caros">
+                <img src="./images/15.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/16.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/17.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/18.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/19.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/20.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/21.jpg" alt="image comes here" class="caros">
+                <img src="./images/101.jpg" alt="image comes here" class="caros">
+                <img src="./images/102.jpg" alt="image comes here" class="caros">
+
+                <img src="./images/104.jpg" alt="image comes here" class="caros">
+
+            </td>
+
+            <script>
+                var index = 0;
+                carousel();
+                function carousel() {
+
+                    var i;
+                    var x = document.getElementsByClassName("caros");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+
+                    index++;
+                    if (index > x.length) index = 1;
+                    x[index - 1].style.display = "block"
+                    setTimeout(carousel, 2000);
+
+
+                }
+            </script>
+            <td style="width: 33%">
+                <h2>n November, we will use lifejackets, transpis and paper boats to dive into our circle Pinneberg in
+                    Orange,
+                    the color of the sea rescue! In four cities we are planning actions and flash mobs:
+                    <ul class="termin">
+                        <li>on 03.11 in the city center of Pinneberg </li>
+                        <li>on 10.11 in Wedel at the harbor </li>
+                        <li>on 17.11 in Schenefeld</li>
+                        <li>jon 24.11 in Elmshorn </li>
+                    </ul>
+                </h2>
+                <img src="./images/104.jpg" alt="image comes here" style="display:block; margin-left:auto; margin-right: auto; width : 50%;">
+            </td>
+        </tr>
+    </table>
+
+    <table style="width:100%; ">
+        <tr>
+            <td class="veranstaltung"><span id="veranTitle">the Time remain to the next meeting:</span>
+                <p id="count">
+
+                    <span id="bigday"></span> Days and <span id="bighour"></span> hours and<span id="bigmin"></span>
+                    minutes and <span id="bigsec"></span> seconds.
+
+                </p>
+            </td>
+            <td style="width: 40% ;"><a href="https://weact.campact.de/petitions/kreis-pinneberger-appell-fur-seenotrettung-und-sichere-hafen"
+                    style="width: 100%;">
+                    <img src="./images/petition.jpg" alt="image comes here"></a>
+            </td>
+            <td style="width: 30%;"> </td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>

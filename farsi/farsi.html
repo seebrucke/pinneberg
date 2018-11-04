@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seebruecke Pinneberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row title">
+            <div class="col-xs-12">
+                <button class="menuButton" onclick="showMenu()">Menu</button>
+                <ul class="title" id="menuBar">
+                    <li class="activeLink"> <a href="#">صفحه اصلی</a></li>
+                    <li class="link"> <a href="contact.html">تماس با ما</a></li>
+                    <li class="link"> <a href="about.html">درباره ما</a></li>
+                    <li class="linkdrop"> <a href="#">زبان</a>
+                        <div class="drop">
+                            <a href="../german/german.html">Deutsch</a>
+                            <a href="../arabi/arabi.html">العربیه</a>
+                            <a href="../index.html">english</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row baner">
+
+
+
+            <div class="col-xs-12 mytitle" id="baner2">
+                <img src="../images/logo.jpg" style="  height: 70px;vertical-align: middle;margin:3px;">
+                <h3 style=" display: inline; font-family:Arial; font-weight: bold; "> Seebrücke Kreis Pinneberg</h3>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="explainText col-xs-12 col-md-6  col-lg-3">
+                <div class="ExplainPersian">
+                    <h2>سی بروکه چیست؟</h2>
+                    جمعی از گروههای مدافع حقوق پناهجویان در ژوییه ی ۲۰۱۸ به برگزاری تظاهرات در شهرهای آلمان فراخوان
+                    دادند<span onclick="myReadMore()" id="hideMe">بیشتر بخوانید </span>
+                    <span id="showMe"><span id="hideMeToo" onclick="myReadLess()"> کمتر</span>تظاهرکنندگان جلیقه های
+                        نارنجی به تن داشتند که به واسطه ی آن به وضعیت نجات پناهجویانی که درآبها غرق میشوند توجه داده
+                        شود برای مطالعه بیشتر به متن آلمانی مراجعه کنید
+
+
+                        <a class="normal" href="https://www.bedeutungonline.de/buendnis-seebruecke-initiative-seebruecke/"
+                            target="blank" onclick="myReadLess()">اینجا کلیک کنی</a></span>
+                </div>
+                <br>
+                <h3 class="ExplainPersian">
+                    ما را روی <a class="normal" href="https://www.facebook.com/seebrueckepinneberg/" target="blank">فیسبوک</a>
+                    دنبال کنید
+                </h3>
+            </div>
+            <div class="col-xs-12  col-md-6  col-lg-6" style="vertical-align:middle;margin-top:10px;">
+                <img src="../images/1.jpg" alt="image comes here" id="slideImage" class="caros" onmouseover="mouseIN()"
+                    onmouseout="mouseOut()">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+                    <h3>&#10094;</h3>
+                </button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+                    <h3>&#10095;</h3>
+                </button>
+            </div>
+            <div class="col-xs-12 col-md-6  col-lg-3">
+                <div class="ExplainPersian2" id="open" style="text-align: right;">
+                    <span style="text-align: right;">
+                    در ماه نوامبر با پوشیدن جلیقه های نجات و درست کردن قایقهای کاغذی نمادین شهر را به رنگ نارنجی در
+                    خواهیم آورد.
+                    قرارهای ما در چهار شهر مختلف به شرح زیر است
+                    <ul class="termin" style="list-style-type: none;">
+                        <li>سوم نوامبر در مرکز شهر پینبرگ </li>
+                        <li>در دهم نوامبر در شهر ویدل </li>
+                        <li>در هفدهم نوامبر در شهر شنفلد</li>
+                        <li>در بیست و چهار نوامبر در المسهورن</li>
+                    </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="veranstaltung">
+                    <span id="veranTitle">زمان باقیمانده تا قرار بعدی ما </span>
+                    <span id="count">
+
+                        فقط <span id="bigday">11</span> روز و <span id="bighour">23</span> ساعت و <span id="bigmin">18</span>
+                        دقیقه و <span id="bigsec">21</span> ثانیه
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <img src="../images/21.jpg" class="ExplainWithoutPadding" alt="image comes here">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 paddingClass">
+                <h3 style="text-align: right;">برای امضای پتیشن  روی عکس کلیک کنید</h3>
+                <a href="https://weact.campact.de/petitions/kreis-pinneberger-appell-fur-seenotrettung-und-sichere-hafen"
+                    target="blank">
+                    <img src="../images/petition.jpg" class="ExplainWithoutPadding" title=" click to sign our petition"
+                        alt="image comes here" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="ExplainPersian fixMe" id="close" style="text-align: right;">
+        <span class="toClose" onclick="killMe()" style="text-align: left;">X</span>
+<span style="text-align: right;">
+        در ماه نوامبر با پوشیدن جلیقه های نجات و درست کردن قایقهای کاغذی نمادین شهر را به رنگ نارنجی در خواهیم آورد.
+        قرارهای ما در چهار شهر مختلف به شرح زیر است
+        <ul class="termin" style="list-style-type: none;">
+            <li>سوم نوامبر در مرکز شهر پینبرگ </li>
+            <li>در دهم نوامبر در شهر ویدل </li>
+            <li>در هفدهم نوامبر در شهر شنفلد</li>
+            <li>در بیست و چهار نوامبر در المسهورن</li>
+        </ul></span>
+    </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

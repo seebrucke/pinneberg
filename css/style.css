@@ -1,0 +1,427 @@
+*{
+  background-origin: content-box;
+} 
+li:hover:not(.activeLink):not(.linkdrop) {
+  background-color: rgb(60, 60, 50);
+  /*transition-duration: 2000ms;    
+          transform-origin: 30px;
+          padding-left: 105px;
+          transition:width 1s height 1s;*/
+}
+body {
+  /* HERE WE USE 2.. IN THE ADDRESS BECAUSE IT MUST GO TWICE BACK */
+  /*background-image: url("../images/backImage7.jpeg");*/
+  
+  background-color: #dc6e28;
+  /* background-color: aqua; */
+  margin: 0px;
+}
+
+
+td {
+  width: 200px;
+  font-size: 15 px;
+  font-weight: bold;
+  font-family: verdana;
+  text-align: left;
+}
+.mytitle {
+  background-color: rgb(255, 208, 0);
+  font-family: verdana;
+  border-radius: 20px;
+  margin-top:30px;
+}
+td.title {
+  background-color: rgb(255, 208, 0);
+  font-family: verdana;
+  border-radius: 20px;
+}
+.baner{
+  vertical-align:middle;
+   margin-top: 50px;
+}
+li.link,
+li.activeLink,
+li.linkdrop{
+  float: left;
+  width: 16.6666%;
+  height: 50px;
+  text-align: center;
+}
+.drop{
+  display: none;
+    position: absolute;
+    min-width: 16.6666%;
+    background-color: black;
+    padding-top:0px;
+}
+/* button{
+  width:60px;
+  height:25px;
+  margin-top:3px;
+  margin-left:10px;
+  margin-bottom: 3px;
+
+} */
+.drop>a{  
+    display:block;
+    text-decoration: none;
+    background-color:black;
+      }
+      .drop>a:hover{
+         background-color: rgb(60, 60, 50);
+
+      }
+      
+.linkdrop:hover>.drop{
+  display:block;
+}
+ul.title, div.title {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+ 
+  top: 0;
+  /*here I solved the problem that nav bar was a little bit to right*/
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  
+}
+a:not(.normal){
+    /* display: inline-block; */
+    /* display: inline-block; */
+    padding: 3px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    list-style-type: none;
+    text-align: center;
+    font-family: cursive;
+}
+li.activeLink {
+  background-color: rgb(199, 14, 44);
+}
+.explainText{
+  text-align: left;
+   font-size: 16px;
+    font-family:verdana;
+}
+th {
+  color: red;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center;
+  font-size: 40px;
+}
+.termin {
+  background-color: yellow;
+  border-radius: 30px;
+  padding-right: 15px;
+  color:black;
+}
+.termin > li:hover {
+  background-color: black;
+  color: white;
+}
+.normal:hover {
+  color:yellow ;
+
+}
+.normal{
+  color: rgb(179, 9, 9); 
+}
+#bigday, #bighour, #bigmin, #bigsec{
+  font-size:40px;
+  color:rgb(5, 65, 5);
+
+}
+.veranstaltung{
+  /* width: 30%; */
+  font: size 12px;
+  color:yellow;
+}
+#veranTitle{
+  font-size: 20px;
+  color:rgb(5, 65, 5);
+
+}
+
+.caros{
+  display:block; 
+  margin-left:auto;
+   margin-right: auto;
+    width : 100%;
+}
+
+.about_title{
+  font-size:30px;
+  text-align: center;
+  font-family: sans-serif;
+  color: yellow;
+font-weight: bolder;
+}
+.about_text{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+}
+.donate {
+  /* left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  background-color: rgb(184, 76, 52); 
+  background-color: black;
+font-size:25px;
+font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;*/
+  background-color: black;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+
+
+}
+.connectTitle{
+  text-align: left; 
+  font-size: 45px; 
+  font-family:verdana; 
+  width:100% ;
+  padding-top:80px;
+  color:darkgreen;
+  text-align: center;
+font-weight: bolder;
+}
+
+.connectText{
+  /* text-align: left;  */
+  font-size: 33px; 
+  padding:15px;
+  /* font-family:verdana; 
+  width:33% ;
+  
+  color:yellow; */
+}
+div.connectText>span{
+ 
+  padding-right: 50px;
+  text-shadow: black;
+  padding-left:50px;
+   
+}
+.barabout{
+  /* left: 50%;
+   margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative; 
+  right: 50%; */
+  /* width: 100vw; */
+  background-color: black;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+
+  /* background-color: rgb(184, 76, 52); */
+  padding-left: 0px;
+  background-color: black;
+  font-size:20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  height: 50px;
+  padding-top:10px;
+  text-align: center;
+  }
+.face{
+
+  height:30px; 
+  /* background-color: rgb(184, 76, 52); */
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+color: rgb(231, 99, 70);
+}
+
+.face:hover{
+color:rgb(118, 118, 231);
+}
+.batTitle{
+    /* padding-bottom:10px;
+    padding-top:20px; */
+    vertical-align: middle;
+}
+.menuButton{
+  display:none;
+  position: relative;
+  z-index: 1;
+}
+ /* @media screen and (max-width:1200px){
+
+  li.link,
+  li.activeLink,
+  li.linkdrop{
+    width:100%; }
+   
+   
+} */
+
+@media screen and (max-width:800px){
+  #menuBar{
+     margin-top:30px;
+    display: none;}
+  li.link,
+  li.activeLink,
+  li.linkdrop{
+    width:100%;
+  }
+  
+    
+  .menuButton{
+  
+    display:block;
+  }
+}
+/* .hidDiv{display:none;} */
+#showMe{
+  display:none;
+}
+#hideMe,#hideMeToo{
+  /* display:block !important; */
+  text-decoration: underline;
+  display:block;
+  color:white;
+}
+.ExplainPersian{
+  padding:20px;
+  margin-top:10px;
+  text-align: right;
+}
+.ExplainPersian2{
+  display:none;
+  padding:20px;
+  margin-top:10px;
+  text-align: right;
+}
+.Explain{
+  padding:20px;
+  margin-top:10px;
+  
+}
+.Explain2{
+  display:none;
+  padding:20px;
+  margin-top:10px;
+  
+}
+/* @keyframes bigger {
+  from{
+      
+      width: 500px;
+  }
+  to{
+     
+    border:1px solid black;
+    box-shadow:5px 5px 5px 5px;
+  
+  }
+} */
+.Explain:hover, .ExplainWithoutPadding:hover,.ExplainPersian:hover{
+    
+  
+  animation-name: bigger;
+  animation-duration: 2s;
+  /* animation-iteration-count: 5; */
+
+  border:1px solid black;
+  box-shadow:5px 5px 5px 5px black;
+
+}
+#count{
+  font-size:12px;
+  color:yellow;
+}
+.paddingClass{
+  margin-top:15px;
+  border:1px solid black;
+}
+.w3-display-left{position:absolute;
+  top:50%;
+  left:5%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%);
+
+}
+.w3-black{
+  /* color:#fff!important; */
+  /* background-color:#000!important; */
+  color:yellow !important;
+}
+.w3-button{
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.w3-display-right{
+  position:absolute;
+  top:50%;
+  right:5%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%);
+}
+.fixMe{
+position:fixed;
+right:5px;
+top:200px;
+  border-left:1px solid black;
+  border-right:1px solid black;
+ border-top:1px solid black; 
+  z-index:5;
+  margin-right:50px;
+  background-color: #dc6d287c;
+  width:300px;
+  font-weight: bold;
+  color:white;
+  
+} 
+.toClose{
+  position: absolute;
+  left:0;
+  top:0;
+  width:20px;
+  border-radius: 50%;
+  background-color: #823c11;
+  color:white;
+  padding-left: 5px;
+  display: block;
+}

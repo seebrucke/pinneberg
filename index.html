@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seebruecke Pinneberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row title">
+            <div class="col-xs-12">
+                <button class="menuButton" onclick="showMenu()">Menu</button>
+                <ul class="title" id="menuBar">
+                    <li class="activeLink"> <a href="#">Home</a></li>
+                    <li class="link"> <a href="contact.html">contact</a></li>
+                    <li class="link"> <a href="about.html">about</a></li>
+                    <li class="linkdrop"> <a href="#">languages</a>
+                        <div class="drop">
+                            <a href="./german/german.html">german</a>
+                            <a href="./arabi/arabi.html">arabi</a>
+                            <a href="./farsi/farsi.html">persian</a>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row baner">
+
+
+
+            <div class="col-xs-12 mytitle" id="baner2">
+                <img src="./images/logo.jpg" style="  height: 70px;vertical-align: middle;margin:3px;">
+                <h3 style=" display: inline; font-family:Arial; font-weight: bold; "> Seebrücke Kreis Pinneberg</h3>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="explainText col-xs-12 col-md-6  col-lg-3">
+                <div class="Explain">
+                    <h2>What is the alliance "Seebrücke?</h2>
+                    The alliance "Seebrücke" - an association of several refugees - called for demonstrations
+                    in German cities in July 2018.<span onclick="myReadMore()" id="hideMe">read more</span>
+                    <span id="showMe"><span id="hideMeToo" onclick="myReadLess()">read less</span>Demonstrators wore
+                        some
+                        orange lifejackets and lifebuoys to
+                        raise awareness of the rescue operation and to demonstrate for the Sea Rescue, as well as safe
+                        escape routes and a humane refugee policy. The cause of the demonstrations were the events
+                        surrounding the rescue "Lifeline". The rescue ship received in june with over 200 rescued
+                        people on board no landing permit in the Mediterranean. Among other things, Malta refused
+                        the rescue ships "Lifeline" and "Sea-Watch 3" the exit from the port. In addition, the captain
+                        is threatened with a procedure.
+
+                        <a class="normal" href="https://www.bedeutungonline.de/buendnis-seebruecke-initiative-seebruecke/"
+                            target="blank" onclick="myReadLess()">read
+                            more</a></span>
+                </div>
+                <br>
+
+                <h3 class="Explain">
+                    You can find us on <a class="normal" href="https://www.facebook.com/seebrueckepinneberg/" target="blank">facebook</a>
+                    too.
+                </h3>
+
+
+            </div>
+            <div class="col-xs-12  col-md-6  col-lg-6" style="vertical-align:middle;margin-top:10px;">
+                <img src="./images/1.jpg" alt="image comes here" id="slideImage" class="caros" onmouseover="mouseIN()"
+                    onmouseout="mouseOut()">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+                    <h3>&#10094;</h3>
+                </button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+                    <h3>&#10095;</h3>
+                </button>
+            </div>
+
+
+            <div class="col-xs-12 col-md-6  col-lg-3">
+                <div class="Explain2" id="open">
+                    In November, we will use lifejackets, transpis and paper boats to dive into our
+                    circle Pinneberg
+                    in
+                    Orange,
+                    the color of the sea rescue! In four cities we are planning actions and flash mobs:
+                    <ul class="termin">
+                        <li>on 03.11 in the city center of Pinneberg </li>
+                        <li>on 10.11 in Wedel at the harbor </li>
+                        <li>on 17.11 in Schenefeld</li>
+                        <li>jon 24.11 in Elmshorn </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="veranstaltung">
+                    <span id="veranTitle">the Time remain to the next meeting: </span>
+                    <span id="count">
+
+                        <span id="bigday">11</span> Days and <span id="bighour">23</span> hours and<span id="bigmin">18</span>
+                        minutes and <span id="bigsec">21</span> seconds.
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <img src="./images/21.jpg" class="ExplainWithoutPadding" alt="image comes here">
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 paddingClass">
+                <h3>click the photo to sign our petition</h3>
+                <a href="https://weact.campact.de/petitions/kreis-pinneberger-appell-fur-seenotrettung-und-sichere-hafen"
+                    target="blank">
+                    <img src="./images/petition.jpg" class="ExplainWithoutPadding" title=" click to sign our petition"
+                        alt="image comes here" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="Explain fixMe" id="close">
+        <span class="toClose" onclick="killMe()">X</span>
+        In November, we will use lifejackets, transpis and paper boats to dive into our
+        circle Pinneberg
+        in
+        Orange,
+        the color of the sea rescue! In four cities we are planning actions and flash mobs:
+        <ul class="termin">
+            <li>on 03.11 in the city center of Pinneberg </li>
+            <li>on 10.11 in Wedel at the harbor </li>
+            <li>on 17.11 in Schenefeld</li>
+            <li>jon 24.11 in Elmshorn </li>
+        </ul>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seebruecke Pinneberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row title">
+            <div class="col-xs-12">
+                <button class="menuButton" onclick="showMenu()">Menu</button>
+                <ul class="title" id="menuBar">
+                    <li class="activeLink"> <a href="#">الصفحه الرئيسية</a></li>
+                    <li class="link"> <a href="contact.html">اتصال بنا</a></li>
+                    <li class="link"> <a href="about.html">عنا</a></li>
+                    <li class="linkdrop"> <a href="#">اللغات</a>
+                        <div class="drop">
+                            <a href="../german/german.html">Deutsch</a>
+                            <a href="../farsi/farsi.html">فارسي</a>
+                            <a href="../index.html">english</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row baner">
+
+
+
+            <div class="col-xs-12 mytitle" id="baner2">
+                <img src="../images/logo.jpg" style="  height: 70px;vertical-align: middle;margin:3px;">
+                <h3 style=" display: inline; font-family:Arial; font-weight: bold; "> Seebrücke Kreis Pinneberg</h3>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="explainText col-xs-12 col-md-6  col-lg-3">
+                <div class="ExplainPersian">
+                    <h2>ما هي سي بروكة</h2>
+                    مجموعة من العديد من اللاجئين - دعت إلى مظاهرات في المدن الألمانية في يوليو
+2018.<span onclick="myReadMore()" id="hideMe">بیشتر بخوانید </span>
+                    <span id="showMe"><span id="hideMeToo" onclick="myReadLess()"> کمتر</span>رتدى المتظاهرون بعض سترات النجاة البرتقالية وعشاق النجاة لرفع الوعي بعملية الإنقاذ والتظاهر
+                    من أجل إنقاذ البحر ، بالإضافة إلى طرق الهروب الآمنة وسياسة اللاجئين الإنسانية. كان سبب المظاهرات هو
+                    الأحداث المحيطة بإنقاذ "شريان الحياة". وقد استلمت سفينة الإنقاذ في يونيو (حزيران) أكثر من 200 شخص
+                    تم إنقاذهم من على متنها عدم وجود تصريح هبوط في البحر الأبيض المتوسط. من بين أمور أخرى ، رفضت مالطا
+                    سفن الإنقاذ "شريان الحياة" و "البحر لمشاهدة 3" الخروج من الميناء. بالإضافة إلى ذلك ، يتم تهديد
+                    القبطان مع إجراء. لمزید الاطلاع
+                    
+
+
+                        <a class="normal" href="https://www.bedeutungonline.de/buendnis-seebruecke-initiative-seebruecke/"
+                            target="blank" onclick="myReadLess()">انقر هنا </a></span>
+                </div>
+                <br>
+                <h3 class="ExplainPersian">
+                    تابعونا فی  <a class="normal" href="https://www.facebook.com/seebrueckepinneberg/" target="blank">فیسبوک</a>
+                            </h3>
+            </div>
+            <div class="col-xs-12  col-md-6  col-lg-6" style="vertical-align:middle;margin-top:10px;">
+                <img src="../images/1.jpg" alt="image comes here" id="slideImage" class="caros" onmouseover="mouseIN()"
+                    onmouseout="mouseOut()">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+                    <h3>&#10094;</h3>
+                </button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+                    <h3>&#10095;</h3>
+                </button>
+            </div>
+            <div class="col-xs-12 col-md-6  col-lg-3">
+                <div class="ExplainPersian2" id="open" style="text-align: right;">
+                    في تشرين الثاني / نوفمبر ، سنستخدم سترات النجاة ، وزورق الورق والورق للغوص في دائرة بینبرگ في
+                    أورانج ، ولون الإنقاذ البحر! في أربع مدن ، نخطط لإجراءات وحشود فلاش
+                    <ul class="termin" style="list-style-type: none;">
+                        <li>في ۳ نومبر فی مرکز مدینه بینبرگ </li>
+                        <li>في ۱۰ نومبر فی مدینه ودل</li>
+                        <li>في ۱۷ دسمبر فی مدینه شنفلد</li>
+                        <li>في ۲۴ دسمبر فی مدینه المسهورن</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="veranstaltung">
+                    <span id="veranTitle">الوقت الباقی الی موعدنا التالي </span>
+                    <span id="count">
+
+                        فحسب <span id="bigday">11</span> یوما و <span id="bighour">23</span> ساعات و <span id="bigmin">18</span>
+                        دقائق و <span id="bigsec">21</span> ثوان
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <img src="../images/21.jpg" class="ExplainWithoutPadding" alt="image comes here">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-8 paddingClass">
+                <h3 style="text-align: right;">انقرهنا لتوقیع رسالتنا</h3>
+                <a href="https://weact.campact.de/petitions/kreis-pinneberger-appell-fur-seenotrettung-und-sichere-hafen"
+                    target="blank">
+                    <img src="../images/petition.jpg" class="ExplainWithoutPadding" title=" click to sign our petition"
+                        alt="image comes here" style="width: 100%;"></a>
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="ExplainPersian fixMe" id="close" style="text-align: right;">
+        <span class="toClose" onclick="killMe()" style="text-align: left;">X</span>
+
+        في تشرين الثاني / نوفمبر ، سنستخدم سترات النجاة ، وزورق الورق والورق للغوص في دائرة بینبرگ في
+        أورانج ، ولون الإنقاذ البحر! في أربع مدن ، نخطط لإجراءات وحشود فلاش
+        <ul class="termin" style="list-style-type: none;">
+            <li>فی ۳ نومبر فی مرکز مدینه بینبرگ </li>
+                        <li>فی ۱۰ نومبر فی مدینه ودل</li>
+                        <li>فی ۱۷ دسمبر فی مدینه شنفلد</li>
+                        <li>فی ۲۴ دسمبر فی مدینه المسهورن</li>
+        </ul>
+    </div>
+    
+</body>
+<script src="../js/main.js"></script>
+
+</html>
