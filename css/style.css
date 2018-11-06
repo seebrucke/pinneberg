@@ -302,6 +302,9 @@ color:rgb(118, 118, 231);
   
     display:block;
   }
+  .fixMe{
+    display:none;
+  }
 }
 /* .hidDiv{display:none;} */
 #showMe{
