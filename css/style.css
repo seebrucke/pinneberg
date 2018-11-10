@@ -415,8 +415,8 @@ top:200px;
   width:300px;
   font-weight: bold;
   color:white;
-  
-} 
+}
+
 .toClose{
   position: absolute;
   left:0;
@@ -428,6 +428,106 @@ top:200px;
   padding-left: 5px;
   display: block;
 }
+
+
 .toClose:hover{
   background-color: black;
+}
+
+form{
+  display:inline-block;
+  margin:auto;
+}
+
+.contain{
+  margin-top:150px;
+  width:30%;
+  height: 80%;
+  display:  flex;
+  flex-direction: column;
+  border: solid 1px black;
+      /* justify-content: center; */
+      /*با اضافه کردن این خط مشکل تنظیم عمودی لبه ها حل شد*/
+
+}
+
+.row1 , .row2{
+  
+  font-weight:bold;
+  display: flex ;
+  justify-content: flex-start;
+  /* justify-content: center;  */
+  height: 30%;
+  /* background-color: green; */
+  flex-wrap: wrap;
+  margin:10px;
+  justify-items: baseline;
+}
+
+
+/* .row2{
+  display: block flex;
+} */
+
+.col1 , .col2{
+  margin-left: 20px;
+   /* border: solid 1px black;  */
+   /* width:30%; */
+}
+.eye {
+  width: 20px;
+  height: 16px;
+  vertical-align: middle;
+ 
+}
+
+.bigInput{
+  height: 25px;
+  width:150px;
+  margin-right:5px;
+  font-size: 16px;
+  
+}
+/* .row1>.col1{
+  vertical-align: middle;
+} */
+div>.col1{
+  padding-top:8px;
+}
+@media screen and (max-width:800px){
+.contain{
+  width:95%;
+
+}
+/* .row1,.row2{
+  justify-content:flex-start;
+} */
+.bigInput{
+  width:130px;
+}
+}
+.upload{
+  margin:auto;
+  margin-top: 50px;
+  width:80%;
+  height:200px;
+  background-color: red;
+  
+  border:solid 1px black;
+}
+#iHide{
+  display:none;
+}
+.buton{
+  display: flex;
+  
+justify-content: flex-end;
+margin:10px;
+}
+#submit{
+  width:80px; 
+  height: 30px; 
+  
+   font-size: 16px;
+   font-weight: bold;
 }

@@ -42,7 +42,7 @@ function plusDivs(j){
 window.onresize=function(){
     var w = window.outerWidth;
     
-    if(w>800) { document.getElementById("menuBar").style = "display: block;";
+    if(w>800) { document.getElementById('menuBar').style = "display: block;";
     document.getElementById("baner2").style = "marging-top:20px";
 }
     else{document.getElementById("menuBar").style = "display: none;";
@@ -105,4 +105,21 @@ function myReadLess(){
 function killMe(){
     document.getElementById("close").style="display:none;";
     document.getElementById("open").style="display:block;";
+}
+function showPass(){
+     var item =document.getElementById('passToTxt')
+    var typ = item.type;
+
+    if ( typ == 'password'){
+        item.type='text';
+        document.getElementById('iShow').style.display='none';
+        document.getElementById('iHide').style.display= 'inline';
+       }
+     else{
+         item.type='password';
+          document.getElementById('iHide').style.display= 'none';
+          document.getElementById('iShow').style.display='none';
+        }
+
+
 }
