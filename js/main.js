@@ -63,7 +63,7 @@ else{
 }
 
 function counter(){
-var d1= new Date(2018,10,10,10,0,0,0);
+var d1= new Date(2018,10,17,10,0,0,0);
 
 var d2= new Date();
 var x = d1.getTime()-d2.getTime();
