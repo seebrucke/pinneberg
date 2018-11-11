@@ -480,12 +480,19 @@ form{
   vertical-align: middle;
  
 }
-
+.fileInput{
+  height:35px;
+  width:200px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: white;
+  font-size: 24px;
+}
 .bigInput{
-  height: 25px;
+  height: 28px;
   width:150px;
   margin-right:5px;
-  font-size: 16px;
+  font-size: 22px;
   
 }
 /* .row1>.col1{

@@ -99,27 +99,18 @@ console.log('I am in upload function');
 
 app.use('/admin/hand', (req, res) => {
 
-    var name2= req.body.username;
+    var name= req.body.username;
+    var pass = req.body.password;
+
     let act = 'http://localhost:3000/upload'
-    // if(name == 'ali'){res.send('hi ali');}
-    // else{res.send('bye')}
-    // let post = "POST";
-    // let file= "file";
-    // let article = "article";
-    // let pdf ="*.pdf";
-    // let submit = "submit";
-    res.type('html').status(200);
-   
-    //res.writeHead(200, {'Content-Type': 'text/html'},);
-    
-    
-    res.write('<p>hallo , ' + name2 + ', nice to meet you</p>');
-  
-    res.write('<form  action='+ act +' method=\'post\' ref=\'uploadForm\' id=\'uploadForm\' encType=\'multipart/form-data\'><input type=\'file\' name=\'article\' accept=\'*.pdf\'><input type=\'submit\'></form>');
-    //res.render('./head');
-    res.send();
-
-
+  if(name == "peer2018"  && pass == "1234"){
+    access= true;
+    res.render('admin.ejs' , {name : name , act:act});
+    }
+    else{
+access = false;
+    res.render('admin.ejs' , { access:"denied"});
+}
 });
 
 
