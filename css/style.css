@@ -480,12 +480,19 @@ form{
   vertical-align: middle;
  
 }
-
+.fileInput{
+  height:35px;
+  width:200px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: white;
+  font-size: 24px;
+}
 .bigInput{
-  height: 25px;
+  height: 28px;
   width:150px;
   margin-right:5px;
-  font-size: 16px;
+  font-size: 22px;
   
 }
 /* .row1>.col1{
@@ -531,3 +538,51 @@ margin:10px;
    font-size: 16px;
    font-weight: bold;
 }
+.articleTitleCloumn{
+  background-color: #913d09;
+  width:20%;
+  height:800px;
+  font-size:20px;
+  color:white;
+  padding: 10px;
+  border-radius:20px;
+  border: solid 1px black;
+  margin:10px;
+  font-weight: bold;
+
+}
+.articleCloumn{
+  background-color: #913d09;
+  width:80%;
+  height:800px;
+  font-size:20px;
+  color:white;
+  padding: 10px;
+  border-radius:20px;
+  border: solid 1px black;
+  margin:10px;
+
+}
+.articlePage{
+  margin-top:50px;
+  margin-left: 15px;
+  /* margin-right: 15px; */
+  width:95%;
+  height: 100%;
+  display:  flex;
+  flex-direction: row;
+  border: solid 1px black;
+
+}
+ @media screen and (max-width:600px){
+.articleTitleCloumn{
+  font-size: 12px;
+  padding:3px;
+  border-radius: 15px;
+}
+.articleCloumn{
+  border-radius: 15px;
+  padding:3px;
+  font-sizy:12px;
+}
+ }

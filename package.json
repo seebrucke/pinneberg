@@ -1,7 +1,6 @@
 {
   "name": "pinneberg",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -23,5 +22,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-fileupload": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

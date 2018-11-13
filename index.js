@@ -95,32 +95,47 @@ console.log('I am in upload function');
 });
     
 
+app.use('/openMEasText' , (req,res) => {
 
-
-app.use('/admin/hand', (req, res) => {
-
-    var name2= req.body.username;
-    let act = 'http://localhost:3000/upload'
-    // if(name == 'ali'){res.send('hi ali');}
-    // else{res.send('bye')}
-    // let post = "POST";
-    // let file= "file";
-    // let article = "article";
-    // let pdf ="*.pdf";
-    // let submit = "submit";
-    res.type('html').status(200);
-   
-    //res.writeHead(200, {'Content-Type': 'text/html'},);
-    
-    
-    res.write('<p>hallo , ' + name2 + ', nice to meet you</p>');
-  
-    res.write('<form  action='+ act +' method=\'post\' ref=\'uploadForm\' id=\'uploadForm\' encType=\'multipart/form-data\'><input type=\'file\' name=\'article\' accept=\'*.pdf\'><input type=\'submit\'></form>');
-    //res.render('./head');
-    res.send();
-
+  var name = req.fileName;
+    // console.log( req);
+const articleFolder = './uploads2/';
+const fs = require('fs');
+let articles=fs.readdirSync(articleFolder);
+articles.forEach(file => {
+  // console.log(file);
+})
+res.render('articles.ejs' , {articles:articles , name:name});
 
 });
 
 
+app.use('/admin/hand', (req, res) => {
+
+  var name= req.body.username;
+  var pass = req.body.password;
+
+  let act = 'http://localhost:3000/upload'
+if(name == "peer2018"  && pass == "1234"){
+  access= true;
+  res.render('admin.ejs' , {name : name , act:act});
+  }
+  else{
+access = false;
+  res.render('admin.ejs' , { access:"denied"});
+}
+});
+
+
+app.use('/articles.html', (req,res) =>{
+  var name="";
+  const articleFolder = './uploads/';
+  const fs = require('fs');
+  let articles=fs.readdirSync(articleFolder);
+  articles.forEach(file => {
+    // console.log(file);
+  })
+  res.render('articles.ejs' , {articles:articles , name:name});
+
+});
 app.listen(3000, () => { console.log('listening....') });

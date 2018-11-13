@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+</head>
+
+<body>
+
+    <form class="contain" action="hand" method="POST">
+        <div class="row2" style="text-align: center;">
+            <h3>please enter your username and password</h3>
+        </div>
+        <div class="row2">
+            <div class="col1"> username</div>
+            <div class="col2"><input type="text" class="bigInput" name="username"/> </div>
+        </div>
+        <div class="row2">
+            <div class="col1">password </div>
+            <div class="col2"><input type="password" class="bigInput" id="passToTxt"  name="password"/><img src="../images/view.png"
+                    class="eye" id="iShow" onclick="showPass()" /><img src="../images/hide.png" class="eye" id="iHide"
+                    onclick="showPass()" /></div>
+
+        </div>
+        <div class="buton">
+            <div class="col1"><input type="submit" value="log in" id="submit" /></div>
+        </div>
+
+
+    </form>
+    <div class="upload">
+<% if (access != "denied"){%>
+<form style="padding: 40px;" action="<%= act %>"  method="POST" ref="uploadForm" id="uploadForm" encType="multipart/form-data">
+    
+    <label for="file-upload" class="fileInput">
+             Upload your File
+        </label>
+        <input id="file-upload" type="file" style="display: none;" name="article" accept="application/pdf">
+    <input type="submit" class="bigInput"/>
+</form><%}
+else{%> <h1> ACCESS DENIED !!</h1><%}%>  
+    </div>
+</body>
+<script src="../js/main.js"></script>
+
+</html>

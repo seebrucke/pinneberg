@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seebruecke Pinneberg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="flüchtlinge, refugees, seebrücke, pinneberg, human rights, pinneberg events, ertrunken in mittlemeer, ">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row title">
+            <div class="col-xs-12">
+                <button class="menuButton" onclick="showMenu()">Menu</button>
+                <ul class="title" id="menuBar">
+                    <li class="link"> <a href="index.html">Home</a></li>
+                    <li class="link"> <a href="contact.html">contact</a></li>
+                    <li class="link"> <a href="about.html">about</a></li>
+                    <li class="activeLink"><a href="articles.html">articles</a></li>
+                    <li class="linkdrop"> <a href="#">languages</a>
+                        <div class="drop">
+                            <a href="./german/german.html">german</a>
+                            <a href="./arabi/arabi.html">arabi</a>
+                            <a href="./farsi/farsi.html">persian</a>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="row baner">
+
+
+
+            <div class="col-xs-12 mytitle" id="baner2">
+                <img src="./images/logo.jpg" style="  height: 70px;vertical-align: middle;margin:3px;">
+                <h3 style=" display: inline; font-family:Arial; font-weight: bold; "> Seebrücke Kreis Pinneberg</h3>
+            </div>
+
+        </div>
+    </div>
+    <div class="articlePage">
+        <div class="articleTitleCloumn">
+            <p>articles:</p>
+            <ul id="close">
+                    <%articles.forEach(file => {%>
+                        <li onclick="makePost()" >
+                        <%=file.slice(0,-4);%>
+                        </li>
+                    <%});%>
+        </ul>
+            
+        </div>
+        <div class="articleCloumn">
+                name:<%=name%>
+        </div>
+    </div>
+   
+</body>
+<script src="./js/main.js"></script>
+    <!-- <script src="./js/require.js"></script> -->
+</html>

@@ -1,3 +1,5 @@
+var axios = require('axios');
+
 var i = 1;
 var mouseover = false;
 function mouseIN(){
@@ -102,6 +104,20 @@ function myReadLess(){
     document.getElementById("Explain").style=" box-shadow: 0px;";
 
 }
+
+
+function makePost() {
+    console.log('nameos');
+    // axios({
+    //     method: 'post',
+    //     url: 'http://localhost:3000/openMEasText',
+    //     data: {
+    //         fileName: nameos,
+    //     }
+    // });
+   
+}
+
 function killMe(){
     document.getElementById("close").style="display:none;";
     document.getElementById("open").style="display:block;";
@@ -120,6 +136,5 @@ function showPass(){
           document.getElementById('iHide').style.display= 'none';
           document.getElementById('iShow').style.display='none';
         }
-
-
 }
+
