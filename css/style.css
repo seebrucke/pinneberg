@@ -586,3 +586,8 @@ margin:10px;
   font-sizy:12px;
 }
  }
+
+ #close>li:hover{
+  color:black;
+  background-color: inherit;
+ }

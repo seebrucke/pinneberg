@@ -119,7 +119,6 @@ res.render('articles.ejs' , {articles:articles , name:name});
 
 app.use('/admin/hand', (req, res) => {
 
-<<<<<<< HEAD
   var name= req.body.username;
   var pass = req.body.password;
 
@@ -131,19 +130,6 @@ if(name == "peer2018"  && pass == "1234"){
   else{
 access = false;
   res.render('admin.ejs' , { access:"denied"});
-=======
-    var name= req.body.username;
-    var pass = req.body.password;
-
-    let act = 'http://localhost:3000/upload'
-  if(name == "peer2018"  && pass == "1234"){
-    access= true;
-    res.render('admin.ejs' , {name : name , act:act});
-    }
-    else{
-access = false;
-    res.render('admin.ejs' , { access:"denied"});
->>>>>>> af8ce0b437f08ad01b82d1d7cdf9c72399644710
 }
 });
 
