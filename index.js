@@ -4,6 +4,8 @@ const app = express();
 
 const fileUpload = require('express-fileupload');
 app.use(fileUpload());
+//////// MAKING AN OBJECT TO USE IN FILE HANDLING ///////
+const fs = require('fs');
 
 /////////////////////////////
 
@@ -39,41 +41,46 @@ app.use('/images', express.static('images'));
 app.use('/bootstrap-3.3.7-dist', express.static('bootstrap-3.3.7-dist'));
 app.use('/views' , express.static('views'));
 
+////////////////////////////////////////////////////////////////////////////////////
+/////this Require is needed to read a pdf file . wihtout this the data in client are not readable
+var PdfReader = require('pdfreader').PdfReader;
+
+/////////////////////////////////////////////////////////////////
 
 app.get('/', function(req, res,next) {
-  // res.send('<a href=\'./admin/admin.html\'>go to admin page<\/a>');
-  //next();
+  res.sendFile("index.html", { root: __dirname });
 });
+//////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+app.get("/fileDataSend",(req, res) => {
 
-// app.post('/upload', function(req, res) {
-//   let sampleFile;
-//   let uploadPath;
+  let fileName = req.query["fileName"];
+  //  ////const src = fs.createReadStream('./uploads/' + fileName);
+  // // fs.readFile("./uploads/"+ fileName ,(err, data) => {
+  //   // if (err) {
+  // //    console.error("ERROR is: ", err);
+  //    //  return;
+  //  //}
+  //  // //console.log(data.toString());
+  // // res.end(data);
+  // // });
+  // /////////try a new way to read pdf files
+    new PdfReader().parseFileItems(fileName, function(err, item){
+   //if (item && item.text)
+    console.log(item.text);
+    //res.end(item);
+  });
+  
 
-// console.log("ho ho ho ")
-//   if (Object.keys(req.files).length == 0) {
-//     res.status(400).send('No files were uploaded.');
-//     return;
-//   }
+});
+////////////////////////////////////////////////////////////////////////
 
-//   console.log('req.files >>>', req.files); // eslint-disable-line
- 
 
-//   sampleFile = req.files.article;
-
-//   uploadPath = __dirname + '/uploads/' + sampleFile.name;
-
-//   sampleFile.mv(uploadPath, function(err) {
-//     if (err) {
-//       return res.status(500).send(__dirname + '/uploads/' + sampleFile.name);
-//     }
-
-//     res.send('File uploaded to ' + uploadPath);
-//   });
-// });
+////////////////////////////////////////////////////////////////////////////
+/// this function recieves the file from user and saves it in a folder (uploads)
 app.post('/upload', function(req, res) {
   let sampleFile;
   let uploadPath;
-console.log('I am in upload function');
   if (Object.keys(req.files).length == 0) {
     res.status(400).send('No files were uploaded.');
     return;
@@ -94,7 +101,7 @@ console.log('I am in upload function');
   });
 });
     
-
+//////////////////////////////////////////////////////////////////////////////
 app.use('/openMEasText' , (req,res) => {
 
   var name = req.fileName;

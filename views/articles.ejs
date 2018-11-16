@@ -16,7 +16,7 @@
         crossorigin="anonymous"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
 
     
 
@@ -61,19 +61,19 @@
             <p>articles:</p>
             <ul id="close">
                     <%articles.forEach(file => {%>
-                        <li onclick="makePost()" >
+                        <li onclick="makePost('<%=file%>')" >
                         <%=file.slice(0,-4);%>
                         </li>
                     <%});%>
         </ul>
             
         </div>
-        <div class="articleCloumn">
+        <div class="articleCloumn" id="textContainer">
                 name:<%=name%>
         </div>
     </div>
    
 </body>
-<script src="./js/main.js"></script>
-    <!-- <script src="./js/require.js"></script> -->
+<script src="../js/main.js"></script>
+    <script src="../js/require.js"></script> 
 </html>

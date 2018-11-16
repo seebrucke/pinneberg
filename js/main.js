@@ -106,16 +106,33 @@ function myReadLess(){
 }
 
 
-function makePost() {
-    console.log('nameos');
-    // axios({
-    //     method: 'post',
-    //     url: 'http://localhost:3000/openMEasText',
-    //     data: {
-    //         fileName: nameos,
-    //     }
-    // });
-   
+function makePost(file) {
+    //////////////////////////////////////////////////////
+    // the first attempt to set the data to server with axios. IT FAILED !!
+                    
+                    // axios({
+                    //    method: 'post',
+                    //     url: 'http://localhost:3000/openMEasText',
+                    //    data: {
+                    // fileName: name,
+                    //    }
+                    // });
+
+   //END OF ATTEMPT ///////////////////////////////////
+
+   // NEW ATTEMPT WITH FETCH THAT WORKS SUCCESSFULLY////
+   //////////////////////////////////////////////////////
+   fetch("/fileDataSend?fileName=" + file , {
+    headers : { 
+      'Content-Type': 'application/pdf',
+      'Accept': 'application/pdf'
+     }
+
+  })
+// .then(data => data.text())
+.then(data => {document.getElementById("textContainer").innerHTML=data;});
+
+
 }
 
 function killMe(){
