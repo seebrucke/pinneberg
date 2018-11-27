@@ -1,4 +1,3 @@
-var axios = require('axios');
 
 var i = 1;
 var mouseover = false;
@@ -118,19 +117,34 @@ function makePost(file) {
                     //    }
                     // });
 
-   //END OF ATTEMPT ///////////////////////////////////
+//    //END OF ATTEMPT ///////////////////////////////////
 
-   // NEW ATTEMPT WITH FETCH THAT WORKS SUCCESSFULLY////
-   //////////////////////////////////////////////////////
-   fetch("/fileDataSend?fileName=" + file , {
-    headers : { 
-      'Content-Type': 'application/pdf',
-      'Accept': 'application/pdf'
-     }
+//    // NEW ATTEMPT WITH FETCH THAT WORKS SUCCESSFULLY for txt files ////
+//    //////////////////////////////////////////////////////
+//    fetch("/fileDataSend?fileName=" + file , {
+//     headers : { 
+//       'Content-Type': 'application/pdf',
+//       'Accept': 'application/pdf'
+//      }
 
-  })
-// .then(data => data.text())
-.then(data => {document.getElementById("textContainer").innerHTML=data;});
+//   })
+//.then(data => data.text())
+//.then(text => {document.getElementById("textContainer").innerHTML=text;
+//console.log(text);
+//window.location.href = "http://www.localhost:3000/articles.html?fileName=" + file;
+//PDFObject.embed("http://www.localhost:3000/uploads/12.pdf", "#textContainer");
+var pdfUrl = "http://www.localhost:3000/uploads/12.pdf";
+var myPDF = new PDFObject({
+                        url: pdfUrl,
+                        pdfOpenParams: {
+                            width: "100%",
+                            height: "1500"
+                        },
+                        id: 'myIdObject'
+                    });
+myPDF.embed('textContainer');
+
+//});
 
 
 }

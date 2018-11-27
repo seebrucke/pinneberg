@@ -541,7 +541,7 @@ margin:10px;
 .articleTitleCloumn{
   background-color: #913d09;
   width:20%;
-  height:800px;
+  height:100%;
   font-size:20px;
   color:white;
   padding: 10px;
@@ -549,18 +549,21 @@ margin:10px;
   border: solid 1px black;
   margin:10px;
   font-weight: bold;
+  box-shadow: 5px 3px 20px #3b1904;;
 
 }
 .articleCloumn{
   background-color: #913d09;
   width:80%;
-  height:800px;
+  height:100%;
   font-size:20px;
   color:white;
   padding: 10px;
   border-radius:20px;
   border: solid 1px black;
   margin:10px;
+  box-shadow: 5px 3px 20px #3b1904;;
+
 
 }
 .articlePage{
@@ -571,7 +574,6 @@ margin:10px;
   height: 100%;
   display:  flex;
   flex-direction: row;
-  border: solid 1px black;
 
 }
  @media screen and (max-width:600px){
